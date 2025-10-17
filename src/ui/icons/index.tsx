@@ -34,7 +34,7 @@ export const PdsIcon = () => (
       width="20"
       height="6"
       rx="2"
-      fill="#E6F4FF"
+      fill="transparent"
       stroke={colors.brand}
       stroke-width="2"
     />
@@ -44,7 +44,7 @@ export const PdsIcon = () => (
       width="20"
       height="6"
       rx="2"
-      stroke="#fff"
+      stroke="transparent"
       stroke-width="0.4"
       fill="none"
     />
@@ -61,7 +61,7 @@ export const NpoIcon = () => (
   >
     <path
       d="M24 7C31 7 38 12 38 20C38 36 24 41 24 41C24 41 10 36 10 20C10 12 17 7 24 7Z"
-      fill="#DEF2FD"
+      fill="transparent"
       stroke={colors.brand}
       stroke-width="2"
     />

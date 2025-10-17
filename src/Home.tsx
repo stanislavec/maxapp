@@ -25,7 +25,7 @@ export const Home = () => {
 
   return (
     <Panel id={String(user.id)}>
-      <Flex direction="column" align="flex-start" gap={32}>
+      <Flex direction="column" align="center" gap={32}>
         <Flex direction="column" align="center" gap={16}>
           <Avatar.Container size={96} rightBottomCorner={<Avatar.OnlineDot />}>
             <Avatar.Image fallback="ME" src={user.photo_url} />
