@@ -23,44 +23,44 @@ export const Home = () => {
 
   if (Object.keys(user).length == 0) return <>Нет данных</>;
 
-  console.log(user);
-
   return (
     <Panel id={String(user.id)}>
-      <Flex direction="column" align="center" gap={16}>
-        <Avatar.Container size={96} rightBottomCorner={<Avatar.OnlineDot />}>
-          <Avatar.Image fallback="ME" src={user.photo_url} />
-        </Avatar.Container>
-        <Flex direction="column" align="center">
-          <Typography.Headline variant="large-strong">
-            {user.first_name}
-          </Typography.Headline>
+      <Flex direction="column" align="flex-start" gap={32}>
+        <Flex direction="column" align="center" gap={16}>
+          <Avatar.Container size={96} rightBottomCorner={<Avatar.OnlineDot />}>
+            <Avatar.Image fallback="ME" src={user.photo_url} />
+          </Avatar.Container>
+          <Flex direction="column" align="center">
+            <Typography.Headline variant="large-strong">
+              {user.first_name}
+            </Typography.Headline>
+          </Flex>
         </Flex>
-      </Flex>
-      <Flex>
-        <CellList mode="island">
-          <CellSimple
-            onClick={() => null}
-            title="Действие 1"
-            subtitle="Короткое описание действия"
-            showChevron
-            before={<PdsIcon />}
-          />
-          <CellSimple
-            onClick={() => null}
-            title="Действие 2"
-            subtitle="Короткое описание действия"
-            showChevron
-            before={<NpoIcon />}
-          />
-          <CellSimple
-            onClick={() => null}
-            title="Действие 3"
-            subtitle="Короткое описание действия"
-            showChevron
-            before={<OpsIcon />}
-          />
-        </CellList>
+        <Flex>
+          <CellList mode="island">
+            <CellSimple
+              onClick={() => null}
+              title="Действие 1"
+              subtitle="Короткое описание действия"
+              showChevron
+              before={<PdsIcon />}
+            />
+            <CellSimple
+              onClick={() => null}
+              title="Действие 2"
+              subtitle="Короткое описание действия"
+              showChevron
+              before={<NpoIcon />}
+            />
+            <CellSimple
+              onClick={() => null}
+              title="Действие 3"
+              subtitle="Короткое описание действия"
+              showChevron
+              before={<OpsIcon />}
+            />
+          </CellList>
+        </Flex>
       </Flex>
     </Panel>
   );

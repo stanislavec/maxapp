@@ -14,7 +14,7 @@ export const PdsIcon = () => (
       width="32"
       height="28"
       rx="4"
-      fill="#DEF2FD"
+      fill="transparent"
       stroke={colors.brand}
       stroke-width="2"
     />
@@ -22,12 +22,12 @@ export const PdsIcon = () => (
       cx="24"
       cy="26"
       r="7"
-      fill="#fff"
+      fill="transparent"
       stroke={colors.brand}
       stroke-width="2"
     />
     <rect x="19" y="25" width="10" height="2" rx="1" fill={colors.brand} />
-    <circle cx="24" cy="26" r="2" fill="#51C41A" />
+    <circle cx="24" cy="26" r="2" fill={colors.brand} />
     <rect
       x="14"
       y="6"
@@ -69,12 +69,12 @@ export const NpoIcon = () => (
       cx="24"
       cy="23"
       r="6"
-      fill="#fff"
+      fill="transparent"
       stroke={colors.brand}
       stroke-width="2"
     />
     <rect x="21" y="22" width="6" height="2" rx="1" fill={colors.brand} />
-    <circle cx="24" cy="23" r="2" fill="#51C41A" />
+    <circle cx="24" cy="23" r="2" fill={colors.brand} />
   </svg>
 );
 
@@ -88,17 +88,17 @@ export const OpsIcon = () => (
   >
     <path
       d="M37 22c0 9-8.5 15-13 15S11 31 11 22V11l13-5 13 5v11z"
-      fill="#DEF2FD"
+      fill="transparent"
       stroke={colors.brand}
       stroke-width="2"
     />
     <path
       d="M24 17a6 6 0 110 12 6 6 0 010-12z"
-      fill="#fff"
+      fill="transparent"
       stroke={colors.brand}
       stroke-width="2"
     />
     <rect x="21" y="22" width="6" height="2" rx="1" fill={colors.brand} />
-    <circle cx="24" cy="23" r="2" fill="#51C41A" />
+    <circle cx="24" cy="23" r="2" fill={colors.brand} />
   </svg>
 );
