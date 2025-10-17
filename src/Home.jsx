@@ -17,7 +17,7 @@ export const Home = () => {
   console.log(user);
 
   return (
-    <Panel id={id}>
+    <Panel id={user.id}>
       <Flex direction="column" align="center" gap={16}>
         <Avatar.Container size={96} rightBottomCorner={<Avatar.OnlineDot />}>
           <Avatar.Image fallback="ME" src={user.photo_url} />
