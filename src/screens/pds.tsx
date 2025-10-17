@@ -1,12 +1,16 @@
 import { Button, Flex, Input } from "@maxhub/max-ui";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { colors } from "../ui/theme";
+import { useCtx } from "../context";
+import { SCREEN } from "../types/screen";
 
 type IForm = {
   snils: string;
 };
 
 const PDS = () => {
+  const { actions } = useCtx();
+
   const {
     register,
     handleSubmit,
@@ -18,10 +22,19 @@ const PDS = () => {
   console.log(errors);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} className="--form">
       <Flex direction="column" align="center" gap={32}>
-        <Flex direction="column" align="center" gap={32}>
+        <Button
+          mode="secondary"
+          appearance="neutral"
+          size="medium"
+          onClick={() => actions.setScreen(SCREEN.MAIN)}
+        >
+          Назад
+        </Button>
+        <Flex direction="column" align="center" gap={16} className="block">
           <Input
+            className="field"
             placeholder="СНИЛС"
             mode="secondary"
             compact={false}

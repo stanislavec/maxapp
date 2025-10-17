@@ -23,7 +23,7 @@ const Main = () => {
           mode="island"
           filled
           header={
-            <Typography.Title style={{ marginBottom: 16 }}>
+            <Typography.Title style={{ marginBottom: 16, display: "block" }}>
               Доступные сервисы
             </Typography.Title>
           }
