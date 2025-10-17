@@ -2,17 +2,19 @@ import { Panel, CellSimple, Avatar, Typography, Flex } from "@maxhub/max-ui";
 import { useEffect, useState } from "react";
 
 export const Home = () => {
-  const [data, setData] = useState({});
+  const [user, setUser] = useState({});
   useEffect(() => {
     console.log(window.WebApp);
-    if (window.WebApp.WebAppData) {
-      setData(window.WebApp.WebAppData);
+    if (window.WebApp.initData) {
+      const params = new URLSearchParams(queryStr);
+      const userJson = params.get("user");
+      setUser(JSON.parse(decodeURIComponent(userJson)));
     }
   }, []);
 
-  if (Object.keys(data).length == 0) return <>Нет данных</>;
+  if (Object.keys(user).length == 0) return <>Нет данных</>;
 
-  console.log(data);
+  console.log(user);
 
   return (
     <Panel id={id}>
