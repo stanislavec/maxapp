@@ -1,5 +1,5 @@
 import { Panel, CellSimple, Avatar, Typography, Flex } from "@maxhub/max-ui";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const Home = () => {
   const [data, setData] = useState({});
