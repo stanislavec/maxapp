@@ -19,7 +19,7 @@ const Main = () => {
         </Flex>
       </Flex>
       <Flex>
-        <CellList mode="island">
+        <CellList mode="island" filled header="Доступные сервисы">
           <CellSimple
             onClick={() => actions.setScreen(SCREEN.PDS)}
             title="Действие 1"
