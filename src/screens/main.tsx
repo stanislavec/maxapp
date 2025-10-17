@@ -19,7 +19,15 @@ const Main = () => {
         </Flex>
       </Flex>
       <Flex>
-        <CellList mode="island" filled header="Доступные сервисы">
+        <CellList
+          mode="island"
+          filled
+          header={
+            <Typography.Title style={{ marginBottom: 16 }}>
+              Доступные сервисы
+            </Typography.Title>
+          }
+        >
           <CellSimple
             onClick={() => actions.setScreen(SCREEN.PDS)}
             title="Действие 1"
