@@ -1,4 +1,11 @@
-import { Panel, Avatar, Typography, Flex } from "@maxhub/max-ui";
+import {
+  Panel,
+  CellList,
+  CellSimple,
+  Avatar,
+  Typography,
+  Flex,
+} from "@maxhub/max-ui";
 import { useEffect, useState } from "react";
 
 export const Home = () => {
@@ -27,6 +34,13 @@ export const Home = () => {
             {user.first_name}
           </Typography.Headline>
         </Flex>
+      </Flex>
+      <Flex>
+        <CellList mode="island">
+          <CellSimple onClick={() => null} title="Действие 1" />
+          <CellSimple onClick={() => null} title="Действие 2" />
+          <CellSimple onClick={() => null} title="Действие 3" />
+        </CellList>
       </Flex>
     </Panel>
   );
