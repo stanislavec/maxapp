@@ -9,4 +9,4 @@ const Root = () => (
   </MaxUI>
 );
 
-createRoot(document.getElementById("root")).render(<Root />);
+createRoot(document.getElementById("root") as HTMLDivElement).render(<Root />);
