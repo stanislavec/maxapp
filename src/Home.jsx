@@ -22,7 +22,7 @@ export const Home = () => {
         <Avatar.Container size={96} rightBottomCorner={<Avatar.OnlineDot />}>
           <Avatar.Image fallback="ME" src={user.photo_url} />
         </Avatar.Container>
-        <Flex className={styles.details} direction="column" align="center">
+        <Flex direction="column" align="center">
           <Typography.Headline variant="large-strong">
             {user.first_name}
           </Typography.Headline>
