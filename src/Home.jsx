@@ -1,4 +1,4 @@
-import { Panel, CellSimple, Avatar, Typography, Flex } from "@maxhub/max-ui";
+import { Panel, Avatar, Typography, Flex } from "@maxhub/max-ui";
 import { useEffect, useState } from "react";
 
 export const Home = () => {
@@ -27,12 +27,6 @@ export const Home = () => {
             {user.first_name}
           </Typography.Headline>
         </Flex>
-      </Flex>
-      <Flex>
-        <CellList mode="island">
-          <CellSimple onClick={onPDSclick} title="Заключить договор ПДС" />
-          <CellSimple onClick={onOPSClick} title="Оставить заявку на ОПС" />
-        </CellList>
       </Flex>
     </Panel>
   );
