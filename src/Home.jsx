@@ -6,7 +6,7 @@ export const Home = () => {
   useEffect(() => {
     console.log(window.WebApp);
     if (window.WebApp.initData) {
-      const params = new URLSearchParams(queryStr);
+      const params = new URLSearchParams(window.WebApp.initData);
       const userJson = params.get("user");
       setUser(JSON.parse(decodeURIComponent(userJson)));
     }
